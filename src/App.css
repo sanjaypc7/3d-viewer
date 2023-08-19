@@ -1,0 +1,33 @@
+/* ModelUploader.css */
+
+/* Styling for the "Choose File" button */
+.san {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007bff; /* Replace with your desired background color */
+  color: #fff; /* Replace with your desired text color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.san input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Hover effect for the "Choose File" button */
+.san:hover {
+  background-color: #0056b3; /* Replace with your desired background color on hover */
+}
+
+/* Style for the "Choose File" button when the file is chosen */
+.san input[type="file"]:focus + .file-input {
+  outline: 2px solid #0056b3; /* Replace with your desired outline color */
+}
